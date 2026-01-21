@@ -1,0 +1,74 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+ENV/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# History
+.history/
+
+# Claude
+.claude/
+
+# Git
+.git/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Generated output directories
+**/outputs/
+**/outputs_*/
+**/*_outputs/
+**/dashboard_bundle/
+
+# Root-level generated analysis files (outputs from pooled_ols_residuals_bist.py and similar scripts)
+/bist_bubbleness_*.xlsx
+/bist_bubbleness_*.png
+/bist_correlation_*.csv
+/bist_vif_*.csv
+/bist_mean_reversion_*.xlsx
+/bist_mean_reversion_*.png
+/bist_sector_extremes_*.xlsx
+/bist_2025q*_undervalued*.xlsx
+
+# Generated quarterly fundamentals (can be rebuilt from fundamental_data/)
+/bist_quarterly_fundamentals.csv
+/bist_quarterly_shares_from_prices.csv
+/bist_df_common_*.csv
+
+# Backtest summaries (generated)
+/backtest_*.md
+
+# Sector model outputs (elastic net, lasso)
+Elastic*/**/*.xlsx
+Elastic*/**/*.png
+Lasso*/**/*.xlsx
+Lasso*/**/*.png
+
+# BIST output directories
+/BIST/**/outputs/
+/BIST/**/*_outputs/
+
+# Cookies (sensitive)
+*.cookies.txt
+*_cookies.txt
+
+# Pycache
+*.pyc

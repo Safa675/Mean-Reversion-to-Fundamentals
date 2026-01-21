@@ -1,0 +1,52 @@
+Q1 2025 BACKTEST - FACTOR MODEL
+================================================================================
+
+Training: 2016-2024
+Portfolio: Q1 2025 (2025-03-31)
+Test period: April 2025 - January 2026
+
+Model R²: 0.223
+Portfolio size: 9 stocks
+
+Portfolio:
+  1. FROTO
+  2. SAHOL
+  3. TTKOM
+  4. KCHOL
+  5. ARCLK
+  6. EREGL
+  7. VESTL
+  8. ULKER
+  9. TMSN
+
+================================================================================
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:           LogMarketCap   R-squared:                       0.223
+Model:                            OLS   Adj. R-squared:                  0.222
+Method:                 Least Squares   F-statistic:                     110.0
+Date:                Tue, 20 Jan 2026   Prob (F-statistic):          9.87e-130
+Time:                        13:30:34   Log-Likelihood:                -9897.3
+No. Observations:                4449   AIC:                         1.981e+04
+Df Residuals:                    4442   BIC:                         1.985e+04
+Df Model:                           6                                         
+Covariance Type:                  HC3                                         
+============================================================================================
+                               coef    std err          z      P>|z|      [0.025      0.975]
+--------------------------------------------------------------------------------------------
+const                       20.0237      0.035    574.753      0.000      19.955      20.092
+Factor_Scale                 1.1675      0.061     19.185      0.000       1.048       1.287
+Factor_Leverage              0.4050      0.057      7.162      0.000       0.294       0.516
+Factor_RD                    0.0323      0.036      0.890      0.374      -0.039       0.104
+Factor_Profitability        -0.0274      0.107     -0.256      0.798      -0.237       0.182
+Factor_Growth                0.1202      0.105      1.142      0.253      -0.086       0.326
+Factor_CapitalEfficiency    -0.1249      0.052     -2.404      0.016      -0.227      -0.023
+==============================================================================
+Omnibus:                      246.127   Durbin-Watson:                   0.232
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              147.358
+Skew:                          -0.308   Prob(JB):                     1.00e-32
+Kurtosis:                       2.355   Cond. No.                         3.66
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity robust (HC3)
